@@ -12,7 +12,7 @@ int _abs(int i)
 
 	if (abs(i))
 	{
-		return (0);
+		return (1);
 	}
-	return (1);
+	return (0);
 }
