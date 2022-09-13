@@ -1,0 +1,17 @@
+#include "main.h"
+#include <ctype.h>
+
+/**
+ * _isalaplha - a function that checks for alpha character
+ * @c: single letter input
+ * Return: 1 if int c is lowercase, 0 if otherwise
+ */
+
+int _islower(int c)
+{
+
+	if (isalpha(c))
+		return (1);
+	return (0);
+
+}
