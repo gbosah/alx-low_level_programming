@@ -29,7 +29,7 @@ void times_table(void)
 
 			else if (m < 10 && j != 0)
 			{
-				_putchar(',');
+				_putchar(' ');
 				_putchar((m % 10) + '0');
 			}
 			else
