@@ -19,7 +19,8 @@ int main(void)
 			sums += m;
 
 		}
+	}
+
 		printf("%lu\n", sums);
 		return (0);
-	}
 }
