@@ -54,3 +54,4 @@ dkms.conf
 *.swp
 *.swo
 _putchar.h
+_putchar.c
