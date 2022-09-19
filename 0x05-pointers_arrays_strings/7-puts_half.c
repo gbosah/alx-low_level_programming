@@ -21,7 +21,7 @@ void puts_half(char *str)
 
 		if (len % 2 != 0)
 		{
-			printf("%c", str[(len - 1) / 2]);
+			*str = (len - 1) / 2;
 		}
 	}
 	printf("\n");
