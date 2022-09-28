@@ -13,5 +13,5 @@ void _print_rev_recursion(char *s)
 
 	len = strlen(s) - 1;
 
-		printf("%d\n", len);
+		printf("%d\n", len--);
 }
