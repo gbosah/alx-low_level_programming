@@ -14,17 +14,18 @@ int main(int argc, char *argv[])
 {
 	int i, sum = 0;
 
-	if (argc < 1)
+	if (argc != 1)
 	{
 		puts("0");
 	}
 
-	if (argc > 'a' || argc < 'z')
+	else if (argc > 'a' || argc < 'z')
 	{
 		puts("Error");
 		return (1);
 	}
 
+	else
 	for (i = 1; i < argc; i++)
 	{
 		sum +=  atoi(argv[i]);
