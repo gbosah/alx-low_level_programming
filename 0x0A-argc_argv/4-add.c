@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 
 /**
  * main - a function that run other function.
@@ -12,20 +13,22 @@
 
 int main(int argc, char *argv[])
 {
-	int i, sum = 0;
+	int sum = 0, i, j;
 
-	if (argc != 1)
+	for (i = 1; i < argc; i++)
 	{
-		puts("0");
+		for (j = 0; argv[i][j]; j++)
+		{
+			if (isdigit(argv[i][j]) == 0)
+			{
+				puts("Error");
+				return (1);
+			}
+		}
 	}
 
-	else if (argc > 'a' || argc < 'z')
-	{
-		puts("Error");
-		return (1);
-	}
 
-	else
+
 	for (i = 1; i < argc; i++)
 	{
 		sum +=  atoi(argv[i]);
