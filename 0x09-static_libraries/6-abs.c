@@ -3,14 +3,14 @@
 
 /**
  * _abs - a function that checks for lowercase character
- * @i: single letter input
+ * @n: single letter input
  * Return: 1 if int c is lowercase, 0 if otherwise
  */
 
-int _abs(int i)
+int _abs(int n)
 {
 
-	if (i < 0)
-		i = i * -1;
-	return (i);
+	if (n < 0)
+		n = n * -1;
+	return (n);
 }
