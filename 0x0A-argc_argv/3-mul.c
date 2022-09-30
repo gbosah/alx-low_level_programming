@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 {
 	int i, sum = 0;
 
-	if (argc < 3)
+	if (argc != 3)
 	{
 		puts("Error");
 		return (1);
