@@ -12,10 +12,13 @@
 
 int main(int argc, char *argv[])
 {
-	int i, sum;
+	int i, sum = 0;
 
-	if (argc < 2)
+	if (argc < 3)
+	{
+		puts("Error");
 		return (1);
+	}
 
 	for (i = 1; i < argc; i++)
 	{
