@@ -4,6 +4,7 @@
 /**
  * sum_them_all - a function that returns the sum of all its parameters.
  * @n: Accepting number
+ * @...: A variable number of paramters to calculate the sum of
  * Return: returns int
  */
 
@@ -18,6 +19,7 @@ int sum_them_all(const unsigned int n, ...)
 
 	for (i = 0; i < n; i++)
 		sum += va_arg(nums, int);
+
 	va_end(nums);
 
 	return (sum);
