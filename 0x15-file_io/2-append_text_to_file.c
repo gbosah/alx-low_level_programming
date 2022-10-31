@@ -4,7 +4,7 @@
 #include <unistd.h>
 
 /**
- * create_file - a function that creates a file.
+ * append_text_to_file - a function that append text to a file.
  * @filename: a pointer to the name of the file.
  * @text_content: is a NULL terminated string to write to the file.
  * Return: return the file.
